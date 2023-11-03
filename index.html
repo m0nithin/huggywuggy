@@ -54,11 +54,12 @@
         <video
           controls
           autoplay
+          preload="auto"
           class="video"
           id="video"
           style="width: 100vw; height: 100vh"
         >
-          <source src="/assets/wuggy.mp4" style="width: 100vw; height: 100vh" />
+          <source src="/assets/wuggy.mp4" type="video/mp4" />
         </video>
         <hr />
         <div class="grid-container">
@@ -86,16 +87,5 @@
         </div>
       </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Get a reference to the audio element
-        var audio = document.getElementById("song");
-
-        // Use setTimeout to play the audio after 10 seconds
-        setTimeout(function () {
-          audio.play();
-        }, 10000); // 10000 milliseconds = 10 seconds
-      });
-    </script>
   </body>
 </html>
